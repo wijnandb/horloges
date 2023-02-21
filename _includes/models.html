@@ -1,0 +1,20 @@
+{% if site.data[page.brandname] %}
+    <section>
+        <div class="article-post">
+            <table class="table">
+                <tr>
+                    <td>Naam</td>
+                    <td>Jaar</td>
+                    <td>Beschrijving</td>
+                </tr>
+                {% for brand in site.data[page.brandname] %}
+                    <tr>
+                            <td><a href="{{ brand.naam | downcase | slugify }}">{{ brand.naam }}</a></td>
+                            <td>{{ brand.jaar }}</td>
+                            <td>{{ brand.beschrijving }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </section>
+{% endif %}
