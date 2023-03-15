@@ -1,78 +1,41 @@
-# Site
-name: "Dikke klokkies"
-title: "Dikke klokkies"
-description: "Mooie horloges, van mooie merken."
-logo: 'assets/images/nietbestaand.png'
-favicon: 'assets/images/logo-black.png'
-baseurl: 
-google_analytics: ''
-disqus: ''
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
-include: ["_pages"]
-permalink: /:title/
+title: Perceptum
+email: wijnand@baretta.nl
+description: >- # this means to ignore newlines until "baseurl:"
+  Perceptum is een digital agency gevestigd in Noordwijk, gespecialiseerd in het bieden van digitale oplossingen aan lokale ondernemers. 
+  Onze missie is om lokale bedrijven te helpen groeien en hun online aanwezigheid te versterken met behulp van 
+  innovatieve en op maat gemaakte digitale oplossingen.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: wijnandb
+github_username:  wijnandb
 
-# Authors
-authors:
-  sal:
-    name: Sal
-    display_name: Sal
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
-    email: 
-    web: 
-    twitter: 
-    description: "Beschrijving van/over de auteur"
-  john:
-    name: John
-    display_name: John    
-    avatar: 'assets/images/avatar.png'
-    gravatar: b1cc14991db7a456fcd761680bbc8f81
-    email: wowthemesnet@gmail.com
-    web: https://www.wowthemes.net
-    twitter: https://twitter.com/wowthemesnet
-    description: "This is the author box. Write a short description of the author here."
-
-# Plugins
+# Build settings
+theme: minima
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
-    
-# Archives
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
 
-# Collections
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
 collections:
-  brands:
-    models: true
+  watches:
     output: true
-
-# Pagination 
-paginate: 6
-paginate_path: /page:num/
-    
-# Other
-markdown: kramdown
-
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
-
-# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
-adsense: "disabled"
-adsense-data-ad-client: "ca-pub-3412143450191416"
-adsense-data-ad-slot: "1363087678"
-
-# Lazy Images ("enabled" or "disabled")
-lazyimages: "enabled"
-
-exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]
+    permalink: /horloges/:slug/
+   
