@@ -1,6 +1,18 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
+title: Horloges
 layout: default
 ---
+
+<div class="card-deck mb-3 text-center">
+    {% for project in site.watches %}
+        <div class="card mb-4 box-shadow">
+            <img class="card-img-top rounded-circle mt-3 mx-auto d-block" src="{{ project.image }}" alt="{{ project.description }}">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ project.title }}</h5>
+                <p class="card-text">{{ project.description }}</p>
+                <a href="/horloges/{{ project.slug }}" class="btn btn-primary mt-auto">Lees verder</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+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
