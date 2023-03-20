@@ -35,5 +35,5 @@ plugins:
 collections:
   watches:
     output: true
-    permalink: /horloges/merken/:slug/
+    permalink: /merken/:slug/
    
